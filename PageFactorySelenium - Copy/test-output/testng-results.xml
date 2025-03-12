@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-11T10:13:11 IST" name="Suite" finished-at="2025-03-11T10:13:13 IST" duration-ms="1724">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Demong@5c671d7f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-03-11T10:13:11 IST" name="Test" finished-at="2025-03-11T10:13:13 IST" duration-ms="1724">
+      <class name="TestRunner.Demong">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.Demong@5c671d7f]" started-at="2025-03-11T10:13:11 IST" name="setUpClass" finished-at="2025-03-11T10:13:12 IST" duration-ms="1080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5328a9c1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Demong@5c671d7f]" started-at="2025-03-11T10:13:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-11T10:13:13 IST" duration-ms="494" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To check the login Functional"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unknown"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.apache.poi.EmptyFileException">
+            <message>
+              <![CDATA[The supplied file was empty (zero bytes long)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.apache.poi.EmptyFileException: The supplied file was empty (zero bytes long)
+at org.apache.poi.util.IOUtils.peekFirstNBytes(IOUtils.java:149)
+at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
+at org.apache.poi.openxml4j.opc.internal.ZipHelper.verifyZipHeader(ZipHelper.java:147)
+at org.apache.poi.openxml4j.opc.internal.ZipHelper.openZipStream(ZipHelper.java:191)
+at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:156)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:363)
+at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:67)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:315)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:289)
+at StepDefinition.Third.credentials(Third.java:40)
+at StepDefinition.Third.user_enters_the_login_credentials(Third.java:22)
+at ✽.user enters the login Credentials(file:///C:/Users/avina/eclipse-workspace/PageFactorySelenium%20-%20Copy/src/test/resources/Feature/sample3.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.poi.EmptyFileException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.Demong@5c671d7f]" started-at="2025-03-11T10:13:13 IST" name="tearDownClass" finished-at="2025-03-11T10:13:13 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.Demong -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
